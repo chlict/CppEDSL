@@ -1,0 +1,660 @@
+TranslationUnitDecl 0x7f9e8584fc08 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x7f9e85850508 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x7f9e858501a0 '__int128'
+|-TypedefDecl 0x7f9e85850578 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x7f9e858501c0 'unsigned __int128'
+|-TypedefDecl 0x7f9e85850900 <<invalid sloc>> <invalid sloc> implicit __NSConstantString '__NSConstantString_tag'
+| `-RecordType 0x7f9e85850660 '__NSConstantString_tag'
+|   `-CXXRecord 0x7f9e858505d0 '__NSConstantString_tag'
+|-TypedefDecl 0x7f9e858509a8 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x7f9e85850960 'char *'
+|   `-BuiltinType 0x7f9e8584fca0 'char'
+|-TypedefDecl 0x7f9e8588bb50 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list '__va_list_tag [1]'
+| `-ConstantArrayType 0x7f9e8588baf0 '__va_list_tag [1]' 1 
+|   `-RecordType 0x7f9e85850a90 '__va_list_tag'
+|     `-CXXRecord 0x7f9e85850a00 '__va_list_tag'
+|-NamespaceDecl 0x7f9e8588bba8 <./edsl.h:3:1, line:70:1> line:3:11 edsl
+| |-CXXRecordDecl 0x7f9e8588bc18 <line:4:5, col:18> col:12 referenced struct Expr definition
+| | |-DefinitionData pass_in_registers empty aggregate standard_layout trivially_copyable pod trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+| | | |-DefaultConstructor exists trivial constexpr defaulted_is_constexpr
+| | | |-CopyConstructor simple trivial has_const_param implicit_has_const_param
+| | | |-MoveConstructor exists simple trivial
+| | | |-CopyAssignment simple trivial has_const_param implicit_has_const_param
+| | | |-MoveAssignment exists simple trivial
+| | | `-Destructor simple irrelevant trivial
+| | |-CXXRecordDecl 0x7f9e8588bd40 <col:5, col:12> col:12 implicit struct Expr
+| | |-CXXConstructorDecl 0x7f9e858b8500 <col:12> col:12 implicit used constexpr Expr 'void () noexcept' inline default trivial
+| | | `-CompoundStmt 0x7f9e858b92e0 <col:12>
+| | |-CXXDestructorDecl 0x7f9e858b85e8 <col:12> col:12 implicit ~Expr 'void () noexcept' inline default trivial
+| | |-CXXConstructorDecl 0x7f9e858b8860 <col:12> col:12 implicit used constexpr Expr 'void (const edsl::Expr &) noexcept' inline default trivial
+| | | |-ParmVarDecl 0x7f9e858b8990 <col:12> col:12 'const edsl::Expr &'
+| | | `-CompoundStmt 0x7f9e858c37b8 <col:12>
+| | |-CXXConstructorDecl 0x7f9e858b8a30 <col:12> col:12 implicit constexpr Expr 'void (edsl::Expr &&)' inline default trivial noexcept-unevaluated 0x7f9e858b8a30
+| | | `-ParmVarDecl 0x7f9e858b8b60 <col:12> col:12 'edsl::Expr &&'
+| | |-CXXMethodDecl 0x7f9e858c77c0 <col:12> col:12 implicit used constexpr operator= 'edsl::Expr &(const edsl::Expr &) noexcept' inline default trivial
+| | | |-ParmVarDecl 0x7f9e858c78e0 <col:12> col:12 'const edsl::Expr &'
+| | | `-CompoundStmt 0x7f9e858c80b8 <col:12>
+| | |   `-ReturnStmt 0x7f9e858c80a8 <col:12>
+| | |     `-UnaryOperator 0x7f9e858c8090 <col:12> 'edsl::Expr' lvalue prefix '*' cannot overflow
+| | |       `-CXXThisExpr 0x7f9e858c8080 <col:12> 'edsl::Expr *' this
+| | `-CXXMethodDecl 0x7f9e858c7950 <col:12> col:12 implicit constexpr operator= 'edsl::Expr &(edsl::Expr &&)' inline default trivial noexcept-unevaluated 0x7f9e858c7950
+| |   `-ParmVarDecl 0x7f9e858c7a70 <col:12> col:12 'edsl::Expr &&'
+| |-CXXRecordDecl 0x7f9e8588bde8 <line:6:5, col:30> col:12 referenced struct IndexExpr definition
+| | |-DefinitionData pass_in_registers empty standard_layout trivially_copyable trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+| | | |-DefaultConstructor exists trivial constexpr defaulted_is_constexpr
+| | | |-CopyConstructor simple trivial has_const_param implicit_has_const_param
+| | | |-MoveConstructor exists simple trivial
+| | | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+| | | |-MoveAssignment exists simple trivial needs_implicit
+| | | `-Destructor simple irrelevant trivial
+| | |-public 'edsl::Expr'
+| | |-CXXRecordDecl 0x7f9e8588bf50 <col:5, col:12> col:12 implicit struct IndexExpr
+| | |-CXXConstructorDecl 0x7f9e858b8400 <col:12> col:12 implicit used constexpr IndexExpr 'void () noexcept' inline default trivial
+| | | |-CXXCtorInitializer 'edsl::Expr'
+| | | | `-CXXConstructExpr 0x7f9e858b92f0 <col:12> 'edsl::Expr' 'void () noexcept'
+| | | `-CompoundStmt 0x7f9e858b9358 <col:12>
+| | |-CXXDestructorDecl 0x7f9e858b86d8 <col:12> col:12 implicit ~IndexExpr 'void () noexcept' inline default trivial
+| | |-CXXConstructorDecl 0x7f9e858b8bd0 <col:12> col:12 implicit used constexpr IndexExpr 'void (const edsl::IndexExpr &) noexcept' inline default trivial
+| | | |-ParmVarDecl 0x7f9e858b8d00 <col:12> col:12 used 'const edsl::IndexExpr &'
+| | | |-CXXCtorInitializer 'edsl::Expr'
+| | | | `-CXXConstructExpr 0x7f9e858c37c8 <col:12> 'edsl::Expr' 'void (const edsl::Expr &) noexcept'
+| | | |   `-ImplicitCastExpr 0x7f9e858c3798 <col:12> 'const edsl::Expr' lvalue <UncheckedDerivedToBase (Expr)>
+| | | |     `-DeclRefExpr 0x7f9e858c3778 <col:12> 'const edsl::IndexExpr' lvalue ParmVar 0x7f9e858b8d00 '' 'const edsl::IndexExpr &'
+| | | `-CompoundStmt 0x7f9e858c3838 <col:12>
+| | `-CXXConstructorDecl 0x7f9e858b8da0 <col:12> col:12 implicit constexpr IndexExpr 'void (edsl::IndexExpr &&)' inline default trivial noexcept-unevaluated 0x7f9e858b8da0
+| |   `-ParmVarDecl 0x7f9e858b8ed0 <col:12> col:12 'edsl::IndexExpr &&'
+| |-ClassTemplateDecl 0x7f9e8588c120 <line:8:5, line:9:31> col:12 Index
+| | |-NonTypeTemplateParmDecl 0x7f9e8588c010 <line:8:15, col:25> col:25 'long long' depth 0 index 0 I
+| | |-CXXRecordDecl 0x7f9e8588c090 <line:9:5, col:31> col:12 struct Index definition
+| | | |-DefinitionData empty standard_layout trivially_copyable trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+| | | | |-DefaultConstructor exists trivial constexpr needs_implicit defaulted_is_constexpr
+| | | | |-CopyConstructor simple trivial has_const_param needs_implicit implicit_has_const_param
+| | | | |-MoveConstructor exists simple trivial needs_implicit
+| | | | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+| | | | |-MoveAssignment exists simple trivial needs_implicit
+| | | | `-Destructor simple irrelevant trivial needs_implicit
+| | | |-public 'edsl::IndexExpr'
+| | | `-CXXRecordDecl 0x7f9e8588c3e8 <col:5, col:12> col:12 implicit struct Index
+| | |-ClassTemplateSpecializationDecl 0x7f9e8588c4e8 <line:8:5, line:9:31> col:12 struct Index definition
+| | | |-DefinitionData pass_in_registers empty standard_layout trivially_copyable trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+| | | | |-DefaultConstructor exists trivial constexpr defaulted_is_constexpr
+| | | | |-CopyConstructor simple trivial has_const_param implicit_has_const_param
+| | | | |-MoveConstructor exists simple trivial
+| | | | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+| | | | |-MoveAssignment exists simple trivial needs_implicit
+| | | | `-Destructor simple irrelevant trivial
+| | | |-public 'edsl::IndexExpr'
+| | | |-TemplateArgument integral 1
+| | | |-CXXRecordDecl 0x7f9e8588c7a8 prev 0x7f9e8588c4e8 <col:5, col:12> col:12 implicit struct Index
+| | | |-CXXConstructorDecl 0x7f9e8588c868 <col:12> col:12 implicit used constexpr Index 'void () noexcept' inline default trivial
+| | | | |-CXXCtorInitializer 'edsl::IndexExpr'
+| | | | | `-CXXConstructExpr 0x7f9e858b9368 <col:12> 'edsl::IndexExpr' 'void () noexcept'
+| | | | `-CompoundStmt 0x7f9e858b93d0 <col:12>
+| | | |-CXXConstructorDecl 0x7f9e858b8f40 <col:12> col:12 implicit used constexpr Index 'void (const edsl::Index<1> &) noexcept' inline default trivial
+| | | | |-ParmVarDecl 0x7f9e858b9070 <col:12> col:12 used 'const edsl::Index<1> &'
+| | | | |-CXXCtorInitializer 'edsl::IndexExpr'
+| | | | | `-CXXConstructExpr 0x7f9e858c3848 <col:12> 'edsl::IndexExpr' 'void (const edsl::IndexExpr &) noexcept'
+| | | | |   `-ImplicitCastExpr 0x7f9e858c3758 <col:12> 'const edsl::IndexExpr' lvalue <UncheckedDerivedToBase (IndexExpr)>
+| | | | |     `-DeclRefExpr 0x7f9e858c3738 <col:12> 'const edsl::Index<1>' lvalue ParmVar 0x7f9e858b9070 '' 'const edsl::Index<1> &'
+| | | | `-CompoundStmt 0x7f9e858c38b8 <col:12>
+| | | |-CXXConstructorDecl 0x7f9e858b9110 <col:12> col:12 implicit constexpr Index 'void (edsl::Index<1> &&)' inline default trivial noexcept-unevaluated 0x7f9e858b9110
+| | | | `-ParmVarDecl 0x7f9e858b9240 <col:12> col:12 'edsl::Index<1> &&'
+| | | `-CXXDestructorDecl 0x7f9e858c38f8 <col:12> col:12 implicit referenced ~Index 'void () noexcept' inline default trivial
+| | |-ClassTemplateSpecializationDecl 0x7f9e858baad8 <line:8:5, line:9:31> col:12 struct Index definition
+| | | |-DefinitionData pass_in_registers empty standard_layout trivially_copyable trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+| | | | |-DefaultConstructor exists trivial constexpr defaulted_is_constexpr
+| | | | |-CopyConstructor simple trivial has_const_param implicit_has_const_param
+| | | | |-MoveConstructor exists simple trivial
+| | | | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+| | | | |-MoveAssignment exists simple trivial needs_implicit
+| | | | `-Destructor simple irrelevant trivial
+| | | |-public 'edsl::IndexExpr'
+| | | |-TemplateArgument integral 2
+| | | |-CXXRecordDecl 0x7f9e858bad98 prev 0x7f9e858baad8 <col:5, col:12> col:12 implicit struct Index
+| | | |-CXXConstructorDecl 0x7f9e858bae58 <col:12> col:12 implicit used constexpr Index 'void () noexcept' inline default trivial
+| | | | |-CXXCtorInitializer 'edsl::IndexExpr'
+| | | | | `-CXXConstructExpr 0x7f9e858bb2e0 <col:12> 'edsl::IndexExpr' 'void () noexcept'
+| | | | `-CompoundStmt 0x7f9e858bb348 <col:12>
+| | | |-CXXConstructorDecl 0x7f9e858baf70 <col:12> col:12 implicit used constexpr Index 'void (const edsl::Index<2> &) noexcept' inline default trivial
+| | | | |-ParmVarDecl 0x7f9e858bb0a0 <col:12> col:12 used 'const edsl::Index<2> &'
+| | | | |-CXXCtorInitializer 'edsl::IndexExpr'
+| | | | | `-CXXConstructExpr 0x7f9e858cd368 <col:12> 'edsl::IndexExpr' 'void (const edsl::IndexExpr &) noexcept'
+| | | | |   `-ImplicitCastExpr 0x7f9e858cd348 <col:12> 'const edsl::IndexExpr' lvalue <UncheckedDerivedToBase (IndexExpr)>
+| | | | |     `-DeclRefExpr 0x7f9e858cd328 <col:12> 'const edsl::Index<2>' lvalue ParmVar 0x7f9e858bb0a0 '' 'const edsl::Index<2> &'
+| | | | `-CompoundStmt 0x7f9e858cd3d8 <col:12>
+| | | |-CXXConstructorDecl 0x7f9e858bb140 <col:12> col:12 implicit constexpr Index 'void (edsl::Index<2> &&)' inline default trivial noexcept-unevaluated 0x7f9e858bb140
+| | | | `-ParmVarDecl 0x7f9e858bb270 <col:12> col:12 'edsl::Index<2> &&'
+| | | `-CXXDestructorDecl 0x7f9e858cd418 <col:12> col:12 implicit referenced ~Index 'void () noexcept' inline default trivial
+| | `-ClassTemplateSpecializationDecl 0x7f9e858bb430 <line:8:5, line:9:31> col:12 struct Index definition
+| |   |-DefinitionData pass_in_registers empty standard_layout trivially_copyable trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+| |   | |-DefaultConstructor exists trivial constexpr defaulted_is_constexpr
+| |   | |-CopyConstructor simple trivial has_const_param implicit_has_const_param
+| |   | |-MoveConstructor exists simple trivial
+| |   | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+| |   | |-MoveAssignment exists simple trivial needs_implicit
+| |   | `-Destructor simple irrelevant trivial
+| |   |-public 'edsl::IndexExpr'
+| |   |-TemplateArgument integral 3
+| |   |-CXXRecordDecl 0x7f9e858bb6e8 prev 0x7f9e858bb430 <col:5, col:12> col:12 implicit struct Index
+| |   |-CXXConstructorDecl 0x7f9e858bb7a8 <col:12> col:12 implicit used constexpr Index 'void () noexcept' inline default trivial
+| |   | |-CXXCtorInitializer 'edsl::IndexExpr'
+| |   | | `-CXXConstructExpr 0x7f9e858bbc40 <col:12> 'edsl::IndexExpr' 'void () noexcept'
+| |   | `-CompoundStmt 0x7f9e858bbca8 <col:12>
+| |   |-CXXConstructorDecl 0x7f9e858bb8c0 <col:12> col:12 implicit used constexpr Index 'void (const edsl::Index<3> &) noexcept' inline default trivial
+| |   | |-ParmVarDecl 0x7f9e858bba00 <col:12> col:12 used 'const edsl::Index<3> &'
+| |   | |-CXXCtorInitializer 'edsl::IndexExpr'
+| |   | | `-CXXConstructExpr 0x7f9e858ce968 <col:12> 'edsl::IndexExpr' 'void (const edsl::IndexExpr &) noexcept'
+| |   | |   `-ImplicitCastExpr 0x7f9e858ce948 <col:12> 'const edsl::IndexExpr' lvalue <UncheckedDerivedToBase (IndexExpr)>
+| |   | |     `-DeclRefExpr 0x7f9e858ce928 <col:12> 'const edsl::Index<3>' lvalue ParmVar 0x7f9e858bba00 '' 'const edsl::Index<3> &'
+| |   | `-CompoundStmt 0x7f9e858ce9d8 <col:12>
+| |   |-CXXConstructorDecl 0x7f9e858bbaa0 <col:12> col:12 implicit constexpr Index 'void (edsl::Index<3> &&)' inline default trivial noexcept-unevaluated 0x7f9e858bbaa0
+| |   | `-ParmVarDecl 0x7f9e858bbbd0 <col:12> col:12 'edsl::Index<3> &&'
+| |   `-CXXDestructorDecl 0x7f9e858cea18 <col:12> col:12 implicit referenced ~Index 'void () noexcept' inline default trivial
+| |-VarDecl 0x7f9e8588c6a8 <line:11:5, col:24> col:24 used _i1 'const Index<1>':'const edsl::Index<1>' constexpr callinit
+| | |-value: Struct
+| | | `-base: Struct
+| | |   `-base: Struct
+| | `-CXXConstructExpr 0x7f9e858baa00 <col:24> 'const Index<1>':'const edsl::Index<1>' 'void () noexcept'
+| |-VarDecl 0x7f9e858bac98 <line:12:5, col:24> col:24 used _i2 'const Index<2>':'const edsl::Index<2>' constexpr callinit
+| | |-value: Struct
+| | | `-base: Struct
+| | |   `-base: Struct
+| | `-CXXConstructExpr 0x7f9e858bb358 <col:24> 'const Index<2>':'const edsl::Index<2>' 'void () noexcept'
+| |-VarDecl 0x7f9e858bb5e8 <line:13:5, col:24> col:24 used _i3 'const Index<3>':'const edsl::Index<3>' constexpr callinit
+| | |-value: Struct
+| | | `-base: Struct
+| | |   `-base: Struct
+| | `-CXXConstructExpr 0x7f9e858bbcb8 <col:24> 'const Index<3>':'const edsl::Index<3>' 'void () noexcept'
+| |-CXXRecordDecl 0x7f9e858bbd38 <line:18:5, line:22:5> line:18:12 referenced struct Scalar definition
+| | |-DefinitionData pass_in_registers empty standard_layout trivially_copyable trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+| | | |-DefaultConstructor exists trivial constexpr defaulted_is_constexpr
+| | | |-CopyConstructor simple trivial has_const_param implicit_has_const_param
+| | | |-MoveConstructor exists simple trivial
+| | | |-CopyAssignment simple trivial has_const_param implicit_has_const_param
+| | | |-MoveAssignment exists simple trivial
+| | | `-Destructor simple irrelevant trivial
+| | |-public 'edsl::Expr'
+| | |-CXXRecordDecl 0x7f9e858bbea0 <col:5, col:12> col:12 implicit referenced struct Scalar
+| | |-CXXMethodDecl 0x7f9e858bc0a0 <line:19:9, line:21:9> line:19:27 used constexpr operator* 'edsl::Scalar &(int &&)'
+| | | |-ParmVarDecl 0x7f9e858bbf78 <col:37, col:43> col:43 v 'int &&'
+| | | `-CompoundStmt 0x7f9e858bc198 <col:46, line:21:9>
+| | |   `-ReturnStmt 0x7f9e858bc188 <line:20:13, col:21>
+| | |     `-UnaryOperator 0x7f9e858bc170 <col:20, col:21> 'edsl::Scalar' lvalue prefix '*' cannot overflow
+| | |       `-CXXThisExpr 0x7f9e858bc160 <col:21> 'edsl::Scalar *' this
+| | |-CXXMethodDecl 0x7f9e858c7ae0 <line:18:12> col:12 implicit used constexpr operator= 'edsl::Scalar &(const edsl::Scalar &) noexcept' inline default trivial
+| | | |-ParmVarDecl 0x7f9e858c7c00 <col:12> col:12 used 'const edsl::Scalar &'
+| | | `-CompoundStmt 0x7f9e858c8130 <col:12>
+| | |   |-CXXMemberCallExpr 0x7f9e858c80d0 <col:12> 'edsl::Expr' lvalue
+| | |   | |-MemberExpr 0x7f9e858c8008 <col:12> '<bound member function type>' .operator= 0x7f9e858c77c0
+| | |   | | `-ImplicitCastExpr 0x7f9e858c7f38 <col:12> 'edsl::Expr' lvalue <UncheckedDerivedToBase (Expr)>
+| | |   | |   `-UnaryOperator 0x7f9e858c7f20 <col:12> 'edsl::Scalar' lvalue prefix '*' cannot overflow
+| | |   | |     `-CXXThisExpr 0x7f9e858c7f10 <col:12> 'edsl::Scalar *' this
+| | |   | `-ImplicitCastExpr 0x7f9e858c7fe8 <col:12> 'const edsl::Expr' lvalue <UncheckedDerivedToBase (Expr)>
+| | |   |   `-DeclRefExpr 0x7f9e858c7fc8 <col:12> 'const edsl::Scalar' lvalue ParmVar 0x7f9e858c7c00 '' 'const edsl::Scalar &'
+| | |   `-ReturnStmt 0x7f9e858c8120 <col:12>
+| | |     `-UnaryOperator 0x7f9e858c8108 <col:12> 'edsl::Scalar' lvalue prefix '*' cannot overflow
+| | |       `-CXXThisExpr 0x7f9e858c80f8 <col:12> 'edsl::Scalar *' this
+| | |-CXXMethodDecl 0x7f9e858c7ca0 <col:12> col:12 implicit constexpr operator= 'edsl::Scalar &(edsl::Scalar &&)' inline default trivial noexcept-unevaluated 0x7f9e858c7ca0
+| | | `-ParmVarDecl 0x7f9e858c7dc0 <col:12> col:12 'edsl::Scalar &&'
+| | |-CXXConstructorDecl 0x7f9e858c8f90 <col:12> col:12 implicit constexpr Scalar 'void ()' inline default trivial noexcept-unevaluated 0x7f9e858c8f90
+| | |-CXXConstructorDecl 0x7f9e858c9078 <col:12> col:12 implicit used constexpr Scalar 'void (const edsl::Scalar &) noexcept' inline default trivial
+| | | |-ParmVarDecl 0x7f9e858c91a0 <col:12> col:12 used 'const edsl::Scalar &'
+| | | |-CXXCtorInitializer 'edsl::Expr'
+| | | | `-CXXConstructExpr 0x7f9e858c9448 <col:12> 'edsl::Expr' 'void (const edsl::Expr &) noexcept'
+| | | |   `-ImplicitCastExpr 0x7f9e858c9428 <col:12> 'const edsl::Expr' lvalue <UncheckedDerivedToBase (Expr)>
+| | | |     `-DeclRefExpr 0x7f9e858c9408 <col:12> 'const edsl::Scalar' lvalue ParmVar 0x7f9e858c91a0 '' 'const edsl::Scalar &'
+| | | `-CompoundStmt 0x7f9e858c94b8 <col:12>
+| | |-CXXConstructorDecl 0x7f9e858c9210 <col:12> col:12 implicit constexpr Scalar 'void (edsl::Scalar &&)' inline default trivial noexcept-unevaluated 0x7f9e858c9210
+| | | `-ParmVarDecl 0x7f9e858c9340 <col:12> col:12 'edsl::Scalar &&'
+| | `-CXXDestructorDecl 0x7f9e858c94f8 <col:12> col:12 implicit referenced ~Scalar 'void () noexcept' inline default trivial
+| |-CXXRecordDecl 0x7f9e858bc1b0 <line:24:5, line:32:5> line:24:12 referenced struct Tensor definition
+| | |-DefinitionData pass_in_registers standard_layout trivially_copyable trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+| | | |-DefaultConstructor exists trivial constexpr needs_implicit defaulted_is_constexpr
+| | | |-CopyConstructor simple trivial has_const_param needs_implicit implicit_has_const_param
+| | | |-MoveConstructor exists simple trivial needs_implicit
+| | | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+| | | |-MoveAssignment exists simple trivial needs_implicit
+| | | `-Destructor simple irrelevant trivial needs_implicit
+| | |-public 'edsl::Expr'
+| | |-CXXRecordDecl 0x7f9e858bc310 <col:5, col:12> col:12 implicit struct Tensor
+| | |-FunctionTemplateDecl 0x7f9e858bc6e0 <line:25:9, line:28:9> line:26:17 operator[]
+| | | |-NonTypeTemplateParmDecl 0x7f9e858bc3b8 <line:25:19, col:29> col:29 referenced 'long long' depth 0 index 0 I
+| | | |-CXXMethodDecl 0x7f9e858bc640 <line:26:9, line:28:9> line:26:17 operator[] 'edsl::Scalar &(Index<I>)'
+| | | | |-ParmVarDecl 0x7f9e858bc508 <col:28, col:35> col:36 'Index<I>'
+| | | | `-CompoundStmt 0x7f9e858bc830 <col:38, line:28:9>
+| | | |   `-ReturnStmt 0x7f9e858bc820 <line:27:13, col:20>
+| | | |     `-MemberExpr 0x7f9e858bc7f0 <col:20> 'edsl::Scalar' lvalue ->scalar_ 0x7f9e858bc778
+| | | |       `-CXXThisExpr 0x7f9e858bc7e0 <col:20> 'edsl::Tensor *' implicit this
+| | | |-CXXMethodDecl 0x7f9e858c7400 <line:26:9, line:28:9> line:26:17 used operator[] 'edsl::Scalar &(Index<1LL>)'
+| | | | |-TemplateArgument integral 1
+| | | | |-ParmVarDecl 0x7f9e858c5ee8 <col:28, col:35> col:36 'Index<1LL>':'edsl::Index<1>'
+| | | | `-CompoundStmt 0x7f9e858dd698 <col:38, line:28:9>
+| | | |   `-ReturnStmt 0x7f9e858dd688 <line:27:13, col:20>
+| | | |     `-MemberExpr 0x7f9e858bc7f0 <col:20> 'edsl::Scalar' lvalue ->scalar_ 0x7f9e858bc778
+| | | |       `-CXXThisExpr 0x7f9e858bc7e0 <col:20> 'edsl::Tensor *' implicit this
+| | | `-CXXMethodDecl 0x7f9e858ce7f0 <line:26:9, line:28:9> line:26:17 used operator[] 'edsl::Scalar &(Index<3LL>)'
+| | |   |-TemplateArgument integral 3
+| | |   |-ParmVarDecl 0x7f9e858ce6e8 <col:28, col:35> col:36 'Index<3LL>':'edsl::Index<3>'
+| | |   `-CompoundStmt 0x7f9e858ddb28 <col:38, line:28:9>
+| | |     `-ReturnStmt 0x7f9e858ddb18 <line:27:13, col:20>
+| | |       `-MemberExpr 0x7f9e858bc7f0 <col:20> 'edsl::Scalar' lvalue ->scalar_ 0x7f9e858bc778
+| | |         `-CXXThisExpr 0x7f9e858bc7e0 <col:20> 'edsl::Tensor *' implicit this
+| | |-AccessSpecDecl 0x7f9e858bc740 <line:30:5, col:12> col:5 private
+| | `-FieldDecl 0x7f9e858bc778 <line:31:9, col:16> col:16 referenced scalar_ 'edsl::Scalar'
+| |-CXXRecordDecl 0x7f9e858bc848 <line:34:5, line:39:5> line:34:12 referenced struct StmtBlock definition
+| | |-DefinitionData pass_in_registers empty aggregate standard_layout trivially_copyable pod trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+| | | |-DefaultConstructor exists trivial constexpr defaulted_is_constexpr
+| | | |-CopyConstructor simple trivial has_const_param implicit_has_const_param
+| | | |-MoveConstructor exists simple trivial
+| | | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+| | | |-MoveAssignment exists simple trivial needs_implicit
+| | | `-Destructor simple irrelevant trivial
+| | |-CXXRecordDecl 0x7f9e858bc970 <col:5, col:12> col:12 implicit referenced struct StmtBlock
+| | |-FunctionTemplateDecl 0x7f9e858bcd20 <line:35:9, line:38:9> line:36:19 operator[]
+| | | |-TemplateTypeParmDecl 0x7f9e858bca00 <line:35:19, col:32> col:32 referenced typename depth 0 index 0 ... Stmts
+| | | |-CXXMethodDecl 0x7f9e858bcc80 <line:36:9, line:38:9> line:36:19 operator[] 'edsl::StmtBlock (Stmts...)'
+| | | | |-ParmVarDecl 0x7f9e858bcb40 <col:30, col:39> col:39 stmt 'Stmts...' pack
+| | | | `-CompoundStmt 0x7f9e858bd4a0 <col:45, line:38:9>
+| | | |   `-ReturnStmt 0x7f9e858bd490 <line:37:13, col:30>
+| | | |     `-ExprWithCleanups 0x7f9e858bd478 <col:20, col:30> 'edsl::StmtBlock'
+| | | |       `-CXXConstructExpr 0x7f9e858bd448 <col:20, col:30> 'edsl::StmtBlock' 'void (edsl::StmtBlock &&) noexcept' elidable
+| | | |         `-MaterializeTemporaryExpr 0x7f9e858bd3e0 <col:20, col:30> 'edsl::StmtBlock' xvalue
+| | | |           `-CXXFunctionalCastExpr 0x7f9e858bcf18 <col:20, col:30> 'edsl::StmtBlock' functional cast to struct edsl::StmtBlock <NoOp>
+| | | |             `-InitListExpr 0x7f9e858bcde8 <col:29, col:30> 'edsl::StmtBlock'
+| | | |-CXXMethodDecl 0x7f9e858c8e60 <line:36:9, line:38:9> line:36:19 used operator[] 'edsl::StmtBlock (edsl::Scalar)'
+| | | | |-TemplateArgument pack
+| | | | | `-TemplateArgument type 'edsl::Scalar'
+| | | | |   `-RecordType 0x7f9e858bbdd0 'edsl::Scalar'
+| | | | |     `-CXXRecord 0x7f9e858bbd38 'Scalar'
+| | | | |-ParmVarDecl 0x7f9e858c8330 <col:30, col:39> col:39 stmt 'edsl::Scalar':'edsl::Scalar'
+| | | | `-CompoundStmt 0x7f9e858dd7c8 <col:45, line:38:9>
+| | | |   `-ReturnStmt 0x7f9e858dd7b8 <line:37:13, col:30>
+| | | |     `-ExprWithCleanups 0x7f9e858dd7a0 <col:20, col:30> 'edsl::StmtBlock'
+| | | |       `-CXXConstructExpr 0x7f9e858dd770 <col:20, col:30> 'edsl::StmtBlock' 'void (edsl::StmtBlock &&) noexcept' elidable
+| | | |         `-MaterializeTemporaryExpr 0x7f9e858dd758 <col:20, col:30> 'edsl::StmtBlock' xvalue
+| | | |           `-CXXFunctionalCastExpr 0x7f9e858dd730 <col:20, col:30> 'edsl::StmtBlock' functional cast to struct edsl::StmtBlock <NoOp>
+| | | |             `-InitListExpr 0x7f9e858dd6f0 <col:29, col:30> 'edsl::StmtBlock'
+| | | `-CXXMethodDecl 0x7f9e858dd0e0 <line:36:9, line:38:9> line:36:19 used operator[] 'edsl::StmtBlock (edsl::StmtBlock)'
+| | |   |-TemplateArgument pack
+| | |   | `-TemplateArgument type 'edsl::StmtBlock'
+| | |   |   `-RecordType 0x7f9e858bc8e0 'edsl::StmtBlock'
+| | |   |     `-CXXRecord 0x7f9e858bc848 'StmtBlock'
+| | |   |-ParmVarDecl 0x7f9e858dcfd0 <col:30, col:39> col:39 stmt 'edsl::StmtBlock':'edsl::StmtBlock'
+| | |   `-CompoundStmt 0x7f9e858ddc58 <col:45, line:38:9>
+| | |     `-ReturnStmt 0x7f9e858ddc48 <line:37:13, col:30>
+| | |       `-ExprWithCleanups 0x7f9e858ddc30 <col:20, col:30> 'edsl::StmtBlock'
+| | |         `-CXXConstructExpr 0x7f9e858ddc00 <col:20, col:30> 'edsl::StmtBlock' 'void (edsl::StmtBlock &&) noexcept' elidable
+| | |           `-MaterializeTemporaryExpr 0x7f9e858ddbe8 <col:20, col:30> 'edsl::StmtBlock' xvalue
+| | |             `-CXXFunctionalCastExpr 0x7f9e858ddbc0 <col:20, col:30> 'edsl::StmtBlock' functional cast to struct edsl::StmtBlock <NoOp>
+| | |               `-InitListExpr 0x7f9e858ddb80 <col:29, col:30> 'edsl::StmtBlock'
+| | |-CXXDestructorDecl 0x7f9e858bce28 <line:34:12> col:12 implicit referenced ~StmtBlock 'void () noexcept' inline default trivial
+| | |-CXXConstructorDecl 0x7f9e858bcf58 <col:12> col:12 implicit constexpr StmtBlock 'void ()' inline default trivial noexcept-unevaluated 0x7f9e858bcf58
+| | |-CXXConstructorDecl 0x7f9e858bd070 <col:12> col:12 implicit constexpr StmtBlock 'void (const edsl::StmtBlock &)' inline default trivial noexcept-unevaluated 0x7f9e858bd070
+| | | `-ParmVarDecl 0x7f9e858bd1a0 <col:12> col:12 'const edsl::StmtBlock &'
+| | `-CXXConstructorDecl 0x7f9e858bd240 <col:12> col:12 implicit used constexpr StmtBlock 'void (edsl::StmtBlock &&) noexcept' inline default trivial
+| |   |-ParmVarDecl 0x7f9e858bd370 <col:12> col:12 'edsl::StmtBlock &&'
+| |   `-CompoundStmt 0x7f9e858bd438 <col:12>
+| |-CXXRecordDecl 0x7f9e858bd4b8 <line:41:5, col:19> col:12 referenced struct Range definition
+| | |-DefinitionData pass_in_registers empty aggregate standard_layout trivially_copyable pod trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+| | | |-DefaultConstructor exists trivial constexpr defaulted_is_constexpr
+| | | |-CopyConstructor simple trivial has_const_param implicit_has_const_param
+| | | |-MoveConstructor exists simple trivial
+| | | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+| | | |-MoveAssignment exists simple trivial needs_implicit
+| | | `-Destructor simple irrelevant trivial
+| | |-CXXRecordDecl 0x7f9e858bd5e0 <col:5, col:12> col:12 implicit struct Range
+| | |-CXXConstructorDecl 0x7f9e858c1a60 <col:12> col:12 implicit constexpr Range 'void () noexcept' inline default trivial
+| | |-CXXDestructorDecl 0x7f9e858c1b48 <col:12> col:12 implicit referenced ~Range 'void () noexcept' inline default trivial
+| | |-CXXConstructorDecl 0x7f9e858c1ca0 <col:12> col:12 implicit constexpr Range 'void (const edsl::Range &)' inline default trivial noexcept-unevaluated 0x7f9e858c1ca0
+| | | `-ParmVarDecl 0x7f9e858c2a00 <col:12> col:12 'const edsl::Range &'
+| | `-CXXConstructorDecl 0x7f9e858c2aa0 <col:12> col:12 implicit used constexpr Range 'void (edsl::Range &&) noexcept' inline default trivial
+| |   |-ParmVarDecl 0x7f9e858c2bd0 <col:12> col:12 'edsl::Range &&'
+| |   `-CompoundStmt 0x7f9e858c5058 <col:12>
+| |-ClassTemplateDecl 0x7f9e858bd7b0 <line:43:5, line:44:27> col:12 RangeIterExpr
+| | |-NonTypeTemplateParmDecl 0x7f9e858bd6a0 <line:43:15, col:25> col:25 'long long' depth 0 index 0 I
+| | |-CXXRecordDecl 0x7f9e858bd720 <line:44:5, col:27> col:12 struct RangeIterExpr definition
+| | | |-DefinitionData empty aggregate standard_layout trivially_copyable pod trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+| | | | |-DefaultConstructor exists trivial constexpr needs_implicit defaulted_is_constexpr
+| | | | |-CopyConstructor simple trivial has_const_param needs_implicit implicit_has_const_param
+| | | | |-MoveConstructor exists simple trivial needs_implicit
+| | | | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+| | | | |-MoveAssignment exists simple trivial needs_implicit
+| | | | `-Destructor simple irrelevant trivial needs_implicit
+| | | `-CXXRecordDecl 0x7f9e858bda68 <col:5, col:12> col:12 implicit struct RangeIterExpr
+| | |-ClassTemplateSpecializationDecl 0x7f9e858c3190 <line:43:5, line:44:27> col:12 struct RangeIterExpr definition
+| | | |-DefinitionData pass_in_registers empty aggregate standard_layout trivially_copyable pod trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+| | | | |-DefaultConstructor exists trivial constexpr defaulted_is_constexpr
+| | | | |-CopyConstructor simple trivial has_const_param implicit_has_const_param
+| | | | |-MoveConstructor exists simple trivial
+| | | | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+| | | | |-MoveAssignment exists simple trivial needs_implicit
+| | | | `-Destructor simple irrelevant trivial
+| | | |-TemplateArgument integral 1
+| | | |-CXXRecordDecl 0x7f9e858c51e0 prev 0x7f9e858c3190 <col:5, col:12> col:12 implicit struct RangeIterExpr
+| | | |-CXXDestructorDecl 0x7f9e858c5288 <col:12> col:12 implicit referenced ~RangeIterExpr 'void () noexcept' inline default trivial
+| | | |-CXXConstructorDecl 0x7f9e858c57c8 <col:12> col:12 implicit constexpr RangeIterExpr 'void ()' inline default trivial noexcept-unevaluated 0x7f9e858c57c8
+| | | |-CXXConstructorDecl 0x7f9e858c58e0 <col:12> col:12 implicit constexpr RangeIterExpr 'void (const edsl::RangeIterExpr<1> &)' inline default trivial noexcept-unevaluated 0x7f9e858c58e0
+| | | | `-ParmVarDecl 0x7f9e858c5a10 <col:12> col:12 'const edsl::RangeIterExpr<1> &'
+| | | `-CXXConstructorDecl 0x7f9e858c5ab0 <col:12> col:12 implicit used constexpr RangeIterExpr 'void (edsl::RangeIterExpr<1> &&) noexcept' inline default trivial
+| | |   |-ParmVarDecl 0x7f9e858c5be0 <col:12> col:12 'edsl::RangeIterExpr<1> &&'
+| | |   `-CompoundStmt 0x7f9e858c5ca8 <col:12>
+| | `-ClassTemplateSpecializationDecl 0x7f9e858cce00 <line:43:5, line:44:27> col:12 struct RangeIterExpr definition
+| |   |-DefinitionData pass_in_registers empty aggregate standard_layout trivially_copyable pod trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+| |   | |-DefaultConstructor exists trivial constexpr defaulted_is_constexpr
+| |   | |-CopyConstructor simple trivial has_const_param implicit_has_const_param
+| |   | |-MoveConstructor exists simple trivial
+| |   | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+| |   | |-MoveAssignment exists simple trivial needs_implicit
+| |   | `-Destructor simple irrelevant trivial
+| |   |-TemplateArgument integral 2
+| |   |-CXXRecordDecl 0x7f9e858cd6b0 prev 0x7f9e858cce00 <col:5, col:12> col:12 implicit struct RangeIterExpr
+| |   |-CXXDestructorDecl 0x7f9e858cd758 <col:12> col:12 implicit referenced ~RangeIterExpr 'void () noexcept' inline default trivial
+| |   |-CXXConstructorDecl 0x7f9e858cdc18 <col:12> col:12 implicit constexpr RangeIterExpr 'void ()' inline default trivial noexcept-unevaluated 0x7f9e858cdc18
+| |   |-CXXConstructorDecl 0x7f9e858cdd30 <col:12> col:12 implicit constexpr RangeIterExpr 'void (const edsl::RangeIterExpr<2> &)' inline default trivial noexcept-unevaluated 0x7f9e858cdd30
+| |   | `-ParmVarDecl 0x7f9e858cde80 <col:12> col:12 'const edsl::RangeIterExpr<2> &'
+| |   `-CXXConstructorDecl 0x7f9e858cdf20 <col:12> col:12 implicit used constexpr RangeIterExpr 'void (edsl::RangeIterExpr<2> &&) noexcept' inline default trivial
+| |     |-ParmVarDecl 0x7f9e858ce050 <col:12> col:12 'edsl::RangeIterExpr<2> &&'
+| |     `-CompoundStmt 0x7f9e858ce118 <col:12>
+| |-FunctionTemplateDecl 0x7f9e858bdf70 <line:46:5, line:49:5> line:47:22 operator<<
+| | |-NonTypeTemplateParmDecl 0x7f9e858bdb28 <line:46:15, col:25> col:25 referenced 'long long' depth 0 index 0 I
+| | |-FunctionDecl 0x7f9e858bded0 <line:47:5, line:49:5> line:47:22 operator<< 'RangeIterExpr<I> (Index<I>, edsl::Range)'
+| | | |-ParmVarDecl 0x7f9e858bdd18 <col:35, col:42> col:43 'Index<I>'
+| | | |-ParmVarDecl 0x7f9e858bdd90 <col:45> col:50 'edsl::Range'
+| | | `-CompoundStmt 0x7f9e858be190 <col:52, line:49:5>
+| | |   `-ReturnStmt 0x7f9e858be180 <line:48:9, col:33>
+| | |     `-CXXUnresolvedConstructExpr 0x7f9e858be158 <col:16, col:33> 'RangeIterExpr<I>' 'RangeIterExpr<I>' list
+| | |       `-InitListExpr 0x7f9e858be118 <col:32, col:33> 'void'
+| | |-FunctionDecl 0x7f9e858c3570 <line:47:5, line:49:5> line:47:22 used operator<< 'RangeIterExpr<1LL> (Index<1LL>, edsl::Range)'
+| | | |-TemplateArgument integral 1
+| | | |-ParmVarDecl 0x7f9e858c33c8 <col:35, col:42> col:43 'Index<1LL>':'edsl::Index<1>'
+| | | |-ParmVarDecl 0x7f9e858c3430 <col:45> col:50 'edsl::Range'
+| | | `-CompoundStmt 0x7f9e858dd540 <col:52, line:49:5>
+| | |   `-ReturnStmt 0x7f9e858dd530 <line:48:9, col:33>
+| | |     `-ExprWithCleanups 0x7f9e858dd518 <col:16, col:33> 'RangeIterExpr<1LL>':'edsl::RangeIterExpr<1>'
+| | |       `-CXXConstructExpr 0x7f9e858dd4e8 <col:16, col:33> 'RangeIterExpr<1LL>':'edsl::RangeIterExpr<1>' 'void (edsl::RangeIterExpr<1> &&) noexcept' elidable
+| | |         `-MaterializeTemporaryExpr 0x7f9e858dd4d0 <col:16, col:33> 'RangeIterExpr<1LL>':'edsl::RangeIterExpr<1>' xvalue
+| | |           `-CXXFunctionalCastExpr 0x7f9e858dd4a8 <col:16, col:33> 'RangeIterExpr<1LL>':'edsl::RangeIterExpr<1>' functional cast to RangeIterExpr<1LL> <NoOp>
+| | |             `-InitListExpr 0x7f9e858dd468 <col:32, col:33> 'RangeIterExpr<1LL>':'edsl::RangeIterExpr<1>'
+| | `-FunctionDecl 0x7f9e858cd1e0 <line:47:5, line:49:5> line:47:22 used operator<< 'RangeIterExpr<2LL> (Index<2LL>, edsl::Range)'
+| |   |-TemplateArgument integral 2
+| |   |-ParmVarDecl 0x7f9e858cd038 <col:35, col:42> col:43 'Index<2LL>':'edsl::Index<2>'
+| |   |-ParmVarDecl 0x7f9e858cd0a0 <col:45> col:50 'edsl::Range'
+| |   `-CompoundStmt 0x7f9e858dd9d0 <col:52, line:49:5>
+| |     `-ReturnStmt 0x7f9e858dd9c0 <line:48:9, col:33>
+| |       `-ExprWithCleanups 0x7f9e858dd9a8 <col:16, col:33> 'RangeIterExpr<2LL>':'edsl::RangeIterExpr<2>'
+| |         `-CXXConstructExpr 0x7f9e858dd978 <col:16, col:33> 'RangeIterExpr<2LL>':'edsl::RangeIterExpr<2>' 'void (edsl::RangeIterExpr<2> &&) noexcept' elidable
+| |           `-MaterializeTemporaryExpr 0x7f9e858dd960 <col:16, col:33> 'RangeIterExpr<2LL>':'edsl::RangeIterExpr<2>' xvalue
+| |             `-CXXFunctionalCastExpr 0x7f9e858dd938 <col:16, col:33> 'RangeIterExpr<2LL>':'edsl::RangeIterExpr<2>' functional cast to RangeIterExpr<2LL> <NoOp>
+| |               `-InitListExpr 0x7f9e858dd8f8 <col:32, col:33> 'RangeIterExpr<2LL>':'edsl::RangeIterExpr<2>'
+| |-CXXRecordDecl 0x7f9e858be1a8 <line:51:5, line:60:5> line:51:12 referenced struct AffineDialect definition
+| | |-DefinitionData pass_in_registers empty aggregate standard_layout trivially_copyable pod trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+| | | |-DefaultConstructor exists trivial constexpr defaulted_is_constexpr
+| | | |-CopyConstructor simple trivial has_const_param implicit_has_const_param
+| | | |-MoveConstructor exists simple trivial
+| | | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+| | | |-MoveAssignment exists simple trivial needs_implicit
+| | | `-Destructor simple irrelevant trivial needs_implicit
+| | |-CXXRecordDecl 0x7f9e858be2d0 <col:5, col:12> col:12 implicit struct AffineDialect
+| | |-CXXMethodDecl 0x7f9e858be500 <line:52:9, line:54:9> line:52:19 For 'edsl::StmtBlock (edsl::Range, const char *) const'
+| | | |-ParmVarDecl 0x7f9e858be370 <col:23, col:29> col:29 r 'edsl::Range'
+| | | |-ParmVarDecl 0x7f9e858be3f0 <col:32, col:44> col:44 i 'const char *'
+| | | `-CompoundStmt 0x7f9e858bfe98 <col:53, line:54:9>
+| | |   `-ReturnStmt 0x7f9e858bfe88 <line:53:13, col:30>
+| | |     `-ExprWithCleanups 0x7f9e858bfe70 <col:20, col:30> 'edsl::StmtBlock'
+| | |       `-CXXConstructExpr 0x7f9e858bfe40 <col:20, col:30> 'edsl::StmtBlock' 'void (edsl::StmtBlock &&) noexcept' elidable
+| | |         `-MaterializeTemporaryExpr 0x7f9e858bfe28 <col:20, col:30> 'edsl::StmtBlock' xvalue
+| | |           `-CXXFunctionalCastExpr 0x7f9e858bfe00 <col:20, col:30> 'edsl::StmtBlock' functional cast to struct edsl::StmtBlock <NoOp>
+| | |             `-InitListExpr 0x7f9e858be9c0 <col:29, col:30> 'edsl::StmtBlock'
+| | |-FunctionTemplateDecl 0x7f9e858be8c0 <line:56:9, line:59:9> line:57:19 For
+| | | |-NonTypeTemplateParmDecl 0x7f9e858be5c8 <line:56:19, col:29> col:29 referenced 'long long' depth 0 index 0 I
+| | | |-CXXMethodDecl 0x7f9e858be820 <line:57:9, line:59:9> line:57:19 For 'edsl::StmtBlock (RangeIterExpr<I>) const'
+| | | | |-ParmVarDecl 0x7f9e858be718 <col:23, col:38> col:39 'RangeIterExpr<I>'
+| | | | `-CompoundStmt 0x7f9e858bffd8 <col:47, line:59:9>
+| | | |   `-ReturnStmt 0x7f9e858bffc8 <line:58:13, col:30>
+| | | |     `-ExprWithCleanups 0x7f9e858bffb0 <col:20, col:30> 'edsl::StmtBlock'
+| | | |       `-CXXConstructExpr 0x7f9e858bff80 <col:20, col:30> 'edsl::StmtBlock' 'void (edsl::StmtBlock &&) noexcept' elidable
+| | | |         `-MaterializeTemporaryExpr 0x7f9e858bff68 <col:20, col:30> 'edsl::StmtBlock' xvalue
+| | | |           `-CXXFunctionalCastExpr 0x7f9e858bff40 <col:20, col:30> 'edsl::StmtBlock' functional cast to struct edsl::StmtBlock <NoOp>
+| | | |             `-InitListExpr 0x7f9e858bff00 <col:29, col:30> 'edsl::StmtBlock'
+| | | |-CXXMethodDecl 0x7f9e858c5640 <line:57:9, line:59:9> line:57:19 used For 'edsl::StmtBlock (RangeIterExpr<1LL>) const'
+| | | | |-TemplateArgument integral 1
+| | | | |-ParmVarDecl 0x7f9e858c5538 <col:23, col:38> col:39 'RangeIterExpr<1LL>':'edsl::RangeIterExpr<1>'
+| | | | `-CompoundStmt 0x7f9e858dd670 <col:47, line:59:9>
+| | | |   `-ReturnStmt 0x7f9e858dd660 <line:58:13, col:30>
+| | | |     `-ExprWithCleanups 0x7f9e858dd648 <col:20, col:30> 'edsl::StmtBlock'
+| | | |       `-CXXConstructExpr 0x7f9e858dd618 <col:20, col:30> 'edsl::StmtBlock' 'void (edsl::StmtBlock &&) noexcept' elidable
+| | | |         `-MaterializeTemporaryExpr 0x7f9e858dd600 <col:20, col:30> 'edsl::StmtBlock' xvalue
+| | | |           `-CXXFunctionalCastExpr 0x7f9e858dd5d8 <col:20, col:30> 'edsl::StmtBlock' functional cast to struct edsl::StmtBlock <NoOp>
+| | | |             `-InitListExpr 0x7f9e858dd598 <col:29, col:30> 'edsl::StmtBlock'
+| | | `-CXXMethodDecl 0x7f9e858cda90 <line:57:9, line:59:9> line:57:19 used For 'edsl::StmtBlock (RangeIterExpr<2LL>) const'
+| | |   |-TemplateArgument integral 2
+| | |   |-ParmVarDecl 0x7f9e858cd988 <col:23, col:38> col:39 'RangeIterExpr<2LL>':'edsl::RangeIterExpr<2>'
+| | |   `-CompoundStmt 0x7f9e858ddb00 <col:47, line:59:9>
+| | |     `-ReturnStmt 0x7f9e858ddaf0 <line:58:13, col:30>
+| | |       `-ExprWithCleanups 0x7f9e858ddad8 <col:20, col:30> 'edsl::StmtBlock'
+| | |         `-CXXConstructExpr 0x7f9e858ddaa8 <col:20, col:30> 'edsl::StmtBlock' 'void (edsl::StmtBlock &&) noexcept' elidable
+| | |           `-MaterializeTemporaryExpr 0x7f9e858dda90 <col:20, col:30> 'edsl::StmtBlock' xvalue
+| | |             `-CXXFunctionalCastExpr 0x7f9e858dda68 <col:20, col:30> 'edsl::StmtBlock' functional cast to struct edsl::StmtBlock <NoOp>
+| | |               `-InitListExpr 0x7f9e858dda28 <col:29, col:30> 'edsl::StmtBlock'
+| | |-CXXConstructorDecl 0x7f9e858c0080 <line:51:12> col:12 implicit used constexpr AffineDialect 'void () noexcept' inline default trivial
+| | | `-CompoundStmt 0x7f9e858c0510 <col:12>
+| | |-CXXConstructorDecl 0x7f9e858c01a0 <col:12> col:12 implicit constexpr AffineDialect 'void (const edsl::AffineDialect &)' inline default trivial noexcept-unevaluated 0x7f9e858c01a0
+| | | `-ParmVarDecl 0x7f9e858c02d0 <col:12> col:12 'const edsl::AffineDialect &'
+| | `-CXXConstructorDecl 0x7f9e858c0370 <col:12> col:12 implicit constexpr AffineDialect 'void (edsl::AffineDialect &&)' inline default trivial noexcept-unevaluated 0x7f9e858c0370
+| |   `-ParmVarDecl 0x7f9e858c04a0 <col:12> col:12 'edsl::AffineDialect &&'
+| |-VarDecl 0x7f9e858c0000 <line:62:5, col:29> col:29 used affine 'const edsl::AffineDialect' constexpr callinit
+| | |-value: Struct
+| | `-CXXConstructExpr 0x7f9e858c0520 <col:29> 'const edsl::AffineDialect' 'void () noexcept'
+| `-ClassTemplateDecl 0x7f9e858c07c8 <line:64:5, line:69:5> line:65:12 range
+|   |-NonTypeTemplateParmDecl 0x7f9e858c05b8 <line:64:15, col:19> col:19 referenced 'int' depth 0 index 0 S
+|   |-NonTypeTemplateParmDecl 0x7f9e858c0630 <col:22, col:26> col:26 referenced 'int' depth 0 index 1 E
+|   |-NonTypeTemplateParmDecl 0x7f9e858c06a8 <col:29, col:33> col:33 referenced 'int' depth 0 index 2 STEP
+|   |-CXXRecordDecl 0x7f9e858c0738 <line:65:5, line:69:5> line:65:12 struct range definition
+|   | |-DefinitionData empty standard_layout trivially_copyable trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+|   | | |-DefaultConstructor exists trivial constexpr needs_implicit defaulted_is_constexpr
+|   | | |-CopyConstructor simple trivial has_const_param needs_implicit implicit_has_const_param
+|   | | |-MoveConstructor exists simple trivial needs_implicit
+|   | | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+|   | | |-MoveAssignment exists simple trivial needs_implicit
+|   | | `-Destructor simple irrelevant trivial needs_implicit
+|   | |-public 'edsl::Range'
+|   | |-CXXRecordDecl 0x7f9e858c0b38 <col:5, col:12> col:12 implicit struct range
+|   | |-VarDecl 0x7f9e858c0be0 <line:66:9, col:38> col:30 start 'const int' static constexpr cinit
+|   | | `-DeclRefExpr 0x7f9e858c0c48 <col:38> 'int' NonTypeTemplateParm 0x7f9e858c05b8 'S' 'int'
+|   | |-VarDecl 0x7f9e858c0c80 <line:67:9, col:36> col:30 end 'const int' static constexpr cinit
+|   | | `-DeclRefExpr 0x7f9e858c0ce8 <col:36> 'int' NonTypeTemplateParm 0x7f9e858c0630 'E' 'int'
+|   | `-VarDecl 0x7f9e858c0d20 <line:68:9, col:37> col:30 step 'const int' static constexpr cinit
+|   |   `-DeclRefExpr 0x7f9e858c0d88 <col:37> 'int' NonTypeTemplateParm 0x7f9e858c06a8 'STEP' 'int'
+|   |-ClassTemplateSpecializationDecl 0x7f9e858c1218 <line:64:5, line:69:5> line:65:12 struct range definition
+|   | |-DefinitionData pass_in_registers empty standard_layout trivially_copyable trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+|   | | |-DefaultConstructor exists trivial constexpr defaulted_is_constexpr
+|   | | |-CopyConstructor simple trivial has_const_param implicit_has_const_param
+|   | | |-MoveConstructor exists simple trivial
+|   | | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+|   | | |-MoveAssignment exists simple trivial needs_implicit
+|   | | `-Destructor simple irrelevant trivial
+|   | |-public 'edsl::Range'
+|   | |-TemplateArgument integral 0
+|   | |-TemplateArgument integral 10
+|   | |-TemplateArgument integral 1
+|   | |-CXXRecordDecl 0x7f9e858c1570 prev 0x7f9e858c1218 <col:5, col:12> col:12 implicit struct range
+|   | |-VarDecl 0x7f9e858c1600 <line:66:9, col:38> col:30 start 'const int' static constexpr cinit
+|   | | |-value: Int 0
+|   | | `-SubstNonTypeTemplateParmExpr 0x7f9e858c1698 <col:38> 'int'
+|   | |   |-NonTypeTemplateParmDecl 0x7f9e858c05b8 <line:64:15, col:19> col:19 referenced 'int' depth 0 index 0 S
+|   | |   `-IntegerLiteral 0x7f9e858c1678 <line:66:38> 'int' 0
+|   | |-VarDecl 0x7f9e858c1710 <line:67:9, col:36> col:30 end 'const int' static constexpr cinit
+|   | | |-value: Int 10
+|   | | `-SubstNonTypeTemplateParmExpr 0x7f9e858c17a8 <col:36> 'int'
+|   | |   |-NonTypeTemplateParmDecl 0x7f9e858c0630 <line:64:22, col:26> col:26 referenced 'int' depth 0 index 1 E
+|   | |   `-IntegerLiteral 0x7f9e858c1788 <line:67:36> 'int' 10
+|   | |-VarDecl 0x7f9e858c1820 <line:68:9, col:37> col:30 step 'const int' static constexpr cinit
+|   | | |-value: Int 1
+|   | | `-SubstNonTypeTemplateParmExpr 0x7f9e858c18b8 <col:37> 'int'
+|   | |   |-NonTypeTemplateParmDecl 0x7f9e858c06a8 <line:64:29, col:33> col:33 referenced 'int' depth 0 index 2 STEP
+|   | |   `-IntegerLiteral 0x7f9e858c1898 <line:68:37> 'int' 1
+|   | |-CXXConstructorDecl 0x7f9e858c1960 <line:65:12> col:12 implicit referenced constexpr range 'void () noexcept' inline default trivial
+|   | |-CXXConstructorDecl 0x7f9e858c2c40 <col:12> col:12 implicit constexpr range 'void (const edsl::range<0, 10, 1> &)' inline default trivial noexcept-unevaluated 0x7f9e858c2c40
+|   | | `-ParmVarDecl 0x7f9e858c2d70 <col:12> col:12 'const edsl::range<0, 10, 1> &'
+|   | |-CXXConstructorDecl 0x7f9e858c2e10 <col:12> col:12 implicit constexpr range 'void (edsl::range<0, 10, 1> &&)' inline default trivial noexcept-unevaluated 0x7f9e858c2e10
+|   | | `-ParmVarDecl 0x7f9e858c2f40 <col:12> col:12 'edsl::range<0, 10, 1> &&'
+|   | `-CXXDestructorDecl 0x7f9e858c2fe0 <col:12> col:12 implicit referenced ~range 'void () noexcept' inline default trivial
+|   `-ClassTemplateSpecializationDecl 0x7f9e858cafd0 <line:64:5, line:69:5> line:65:12 struct range definition
+|     |-DefinitionData pass_in_registers empty standard_layout trivially_copyable trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+|     | |-DefaultConstructor exists trivial constexpr defaulted_is_constexpr
+|     | |-CopyConstructor simple trivial has_const_param implicit_has_const_param
+|     | |-MoveConstructor exists simple trivial
+|     | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+|     | |-MoveAssignment exists simple trivial needs_implicit
+|     | `-Destructor simple irrelevant trivial
+|     |-public 'edsl::Range'
+|     |-TemplateArgument integral 0
+|     |-TemplateArgument integral 20
+|     |-TemplateArgument integral 2
+|     |-CXXRecordDecl 0x7f9e858cb320 prev 0x7f9e858cafd0 <col:5, col:12> col:12 implicit struct range
+|     |-VarDecl 0x7f9e858cb3b0 <line:66:9, col:38> col:30 start 'const int' static constexpr cinit
+|     | |-value: Int 0
+|     | `-SubstNonTypeTemplateParmExpr 0x7f9e858cb448 <col:38> 'int'
+|     |   |-NonTypeTemplateParmDecl 0x7f9e858c05b8 <line:64:15, col:19> col:19 referenced 'int' depth 0 index 0 S
+|     |   `-IntegerLiteral 0x7f9e858cb428 <line:66:38> 'int' 0
+|     |-VarDecl 0x7f9e858cb4c0 <line:67:9, col:36> col:30 end 'const int' static constexpr cinit
+|     | |-value: Int 20
+|     | `-SubstNonTypeTemplateParmExpr 0x7f9e858cb558 <col:36> 'int'
+|     |   |-NonTypeTemplateParmDecl 0x7f9e858c0630 <line:64:22, col:26> col:26 referenced 'int' depth 0 index 1 E
+|     |   `-IntegerLiteral 0x7f9e858cb538 <line:67:36> 'int' 20
+|     |-VarDecl 0x7f9e858cb5d0 <line:68:9, col:37> col:30 step 'const int' static constexpr cinit
+|     | |-value: Int 2
+|     | `-SubstNonTypeTemplateParmExpr 0x7f9e858cb668 <col:37> 'int'
+|     |   |-NonTypeTemplateParmDecl 0x7f9e858c06a8 <line:64:29, col:33> col:33 referenced 'int' depth 0 index 2 STEP
+|     |   `-IntegerLiteral 0x7f9e858cb648 <line:68:37> 'int' 2
+|     |-CXXConstructorDecl 0x7f9e858cb710 <line:65:12> col:12 implicit referenced constexpr range 'void () noexcept' inline default trivial
+|     |-CXXConstructorDecl 0x7f9e858cb830 <col:12> col:12 implicit constexpr range 'void (const edsl::range<0, 20, 2> &)' inline default trivial noexcept-unevaluated 0x7f9e858cb830
+|     | `-ParmVarDecl 0x7f9e858cb960 <col:12> col:12 'const edsl::range<0, 20, 2> &'
+|     |-CXXConstructorDecl 0x7f9e858cba00 <col:12> col:12 implicit constexpr range 'void (edsl::range<0, 20, 2> &&)' inline default trivial noexcept-unevaluated 0x7f9e858cba00
+|     | `-ParmVarDecl 0x7f9e858cbb30 <col:12> col:12 'edsl::range<0, 20, 2> &&'
+|     `-CXXDestructorDecl 0x7f9e858cbbd0 <col:12> col:12 implicit referenced ~range 'void () noexcept' inline default trivial
+|-UsingDirectiveDecl 0x7f9e858c0e00 <test.cpp:3:1, col:17> col:17 Namespace 0x7f9e8588bba8 'edsl'
+|-FunctionDecl 0x7f9e858c0fc0 <line:5:1, line:9:1> line:5:6 Test1 'void (edsl::Tensor, edsl::Tensor)'
+| |-ParmVarDecl 0x7f9e858c0e68 <col:12, col:19> col:19 used t1 'edsl::Tensor'
+| |-ParmVarDecl 0x7f9e858c0ee0 <col:23, col:30> col:30 used t2 'edsl::Tensor'
+| `-CompoundStmt 0x7f9e858c96e0 <col:34, line:9:1>
+|   `-ExprWithCleanups 0x7f9e858c96c8 <line:6:5, line:8:5> 'edsl::StmtBlock'
+|     `-CXXOperatorCallExpr 0x7f9e858c9688 <line:6:5, line:8:5> 'edsl::StmtBlock' '[]'
+|       |-ImplicitCastExpr 0x7f9e858c9670 <line:6:42, line:8:5> 'edsl::StmtBlock (*)(edsl::Scalar)' <FunctionToPointerDecay>
+|       | `-DeclRefExpr 0x7f9e858c95e8 <line:6:42, line:8:5> 'edsl::StmtBlock (edsl::Scalar)' lvalue CXXMethod 0x7f9e858c8e60 'operator[]' 'edsl::StmtBlock (edsl::Scalar)'
+|       |-MaterializeTemporaryExpr 0x7f9e858c8f60 <line:6:5, col:40> 'edsl::StmtBlock' lvalue
+|       | `-CXXMemberCallExpr 0x7f9e858c5788 <col:5, col:40> 'edsl::StmtBlock'
+|       |   |-MemberExpr 0x7f9e858c5740 <col:5, col:12> '<bound member function type>' .For 0x7f9e858c5640
+|       |   | `-DeclRefExpr 0x7f9e858c10b8 <col:5> 'const edsl::AffineDialect' lvalue Var 0x7f9e858c0000 'affine' 'const edsl::AffineDialect'
+|       |   `-CXXConstructExpr 0x7f9e858c5cb8 <col:16, col:39> 'RangeIterExpr<1LL>':'edsl::RangeIterExpr<1>' 'void (edsl::RangeIterExpr<1> &&) noexcept' elidable
+|       |     `-MaterializeTemporaryExpr 0x7f9e858c5c50 <col:16, col:39> 'RangeIterExpr<1LL>':'edsl::RangeIterExpr<1>' xvalue
+|       |       `-CXXOperatorCallExpr 0x7f9e858c5138 <col:16, col:39> 'RangeIterExpr<1LL>':'edsl::RangeIterExpr<1>' '<<'
+|       |         |-ImplicitCastExpr 0x7f9e858c5120 <col:20> 'RangeIterExpr<1LL> (*)(Index<1LL>, edsl::Range)' <FunctionToPointerDecay>
+|       |         | `-DeclRefExpr 0x7f9e858c5098 <col:20> 'RangeIterExpr<1LL> (Index<1LL>, edsl::Range)' lvalue Function 0x7f9e858c3570 'operator<<' 'RangeIterExpr<1LL> (Index<1LL>, edsl::Range)'
+|       |         |-CXXConstructExpr 0x7f9e858c38c8 <col:16> 'Index<1LL>':'edsl::Index<1>' 'void (const edsl::Index<1> &) noexcept'
+|       |         | `-DeclRefExpr 0x7f9e858c1138 <col:16> 'const Index<1>':'const edsl::Index<1>' lvalue Var 0x7f9e8588c6a8 '_i1' 'const Index<1>':'const edsl::Index<1>'
+|       |         `-CXXConstructExpr 0x7f9e858c5068 <col:23, col:39> 'edsl::Range' 'void (edsl::Range &&) noexcept'
+|       |           `-ImplicitCastExpr 0x7f9e858c5000 <col:23, col:39> 'edsl::Range' xvalue <DerivedToBase (Range)>
+|       |             `-MaterializeTemporaryExpr 0x7f9e858c39e8 <col:23, col:39> 'range<0, 10, 1>':'edsl::range<0, 10, 1>' xvalue
+|       |               `-CXXTemporaryObjectExpr 0x7f9e858c2fb0 <col:23, col:39> 'range<0, 10, 1>':'edsl::range<0, 10, 1>' 'void () noexcept' list zeroing
+|       `-CXXConstructExpr 0x7f9e858c94c8 <line:7:9, col:25> 'edsl::Scalar':'edsl::Scalar' 'void (const edsl::Scalar &) noexcept'
+|         `-ImplicitCastExpr 0x7f9e858c93b0 <col:9, col:25> 'const edsl::Scalar' lvalue <NoOp>
+|           `-CXXOperatorCallExpr 0x7f9e858c81c8 <col:9, col:25> 'edsl::Scalar' lvalue '='
+|             |-ImplicitCastExpr 0x7f9e858c81b0 <col:17> 'edsl::Scalar &(*)(const edsl::Scalar &) noexcept' <FunctionToPointerDecay>
+|             | `-DeclRefExpr 0x7f9e858c7e48 <col:17> 'edsl::Scalar &(const edsl::Scalar &) noexcept' lvalue CXXMethod 0x7f9e858c7ae0 'operator=' 'edsl::Scalar &(const edsl::Scalar &) noexcept'
+|             |-CXXOperatorCallExpr 0x7f9e858c75c8 <col:9, col:15> 'edsl::Scalar' lvalue '[]'
+|             | |-ImplicitCastExpr 0x7f9e858c75b0 <col:11, col:15> 'edsl::Scalar &(*)(Index<1LL>)' <FunctionToPointerDecay>
+|             | | `-DeclRefExpr 0x7f9e858c7530 <col:11, col:15> 'edsl::Scalar &(Index<1LL>)' lvalue CXXMethod 0x7f9e858c7400 'operator[]' 'edsl::Scalar &(Index<1LL>)'
+|             | |-DeclRefExpr 0x7f9e858c5ce8 <col:9> 'edsl::Tensor' lvalue ParmVar 0x7f9e858c0ee0 't2' 'edsl::Tensor'
+|             | `-CXXConstructExpr 0x7f9e858c7500 <col:12> 'Index<1LL>':'edsl::Index<1>' 'void (const edsl::Index<1> &) noexcept'
+|             |   `-DeclRefExpr 0x7f9e858c5d08 <col:12> 'const Index<1>':'const edsl::Index<1>' lvalue Var 0x7f9e8588c6a8 '_i1' 'const Index<1>':'const edsl::Index<1>'
+|             `-ImplicitCastExpr 0x7f9e858c7e30 <col:19, col:25> 'const edsl::Scalar' lvalue <NoOp>
+|               `-CXXOperatorCallExpr 0x7f9e858c7718 <col:19, col:25> 'edsl::Scalar' lvalue '[]'
+|                 |-ImplicitCastExpr 0x7f9e858c7700 <col:21, col:25> 'edsl::Scalar &(*)(Index<1LL>)' <FunctionToPointerDecay>
+|                 | `-DeclRefExpr 0x7f9e858c76e0 <col:21, col:25> 'edsl::Scalar &(Index<1LL>)' lvalue CXXMethod 0x7f9e858c7400 'operator[]' 'edsl::Scalar &(Index<1LL>)'
+|                 |-DeclRefExpr 0x7f9e858c7608 <col:19> 'edsl::Tensor' lvalue ParmVar 0x7f9e858c0e68 't1' 'edsl::Tensor'
+|                 `-CXXConstructExpr 0x7f9e858c76b0 <col:22> 'Index<1LL>':'edsl::Index<1>' 'void (const edsl::Index<1> &) noexcept'
+|                   `-DeclRefExpr 0x7f9e858c7628 <col:22> 'const Index<1>':'const edsl::Index<1>' lvalue Var 0x7f9e8588c6a8 '_i1' 'const Index<1>':'const edsl::Index<1>'
+`-FunctionDecl 0x7f9e858c9818 <line:11:1, line:18:1> line:11:6 Test2 'void (edsl::Tensor, edsl::Tensor)'
+  |-ParmVarDecl 0x7f9e858c9708 <col:12, col:19> col:19 used t1 'edsl::Tensor'
+  |-ParmVarDecl 0x7f9e858c9780 <col:23, col:30> col:30 used t2 'edsl::Tensor'
+  `-CompoundStmt 0x7f9e858dd330 <col:34, line:18:1>
+    `-ExprWithCleanups 0x7f9e858dd318 <line:12:5, line:17:5> 'edsl::StmtBlock'
+      `-CXXOperatorCallExpr 0x7f9e858dd2d8 <line:12:5, line:17:5> 'edsl::StmtBlock' '[]'
+        |-ImplicitCastExpr 0x7f9e858dd2c0 <line:12:42, line:17:5> 'edsl::StmtBlock (*)(edsl::StmtBlock)' <FunctionToPointerDecay>
+        | `-DeclRefExpr 0x7f9e858dd240 <line:12:42, line:17:5> 'edsl::StmtBlock (edsl::StmtBlock)' lvalue CXXMethod 0x7f9e858dd0e0 'operator[]' 'edsl::StmtBlock (edsl::StmtBlock)'
+        |-MaterializeTemporaryExpr 0x7f9e858dd1e0 <line:12:5, col:40> 'edsl::StmtBlock' lvalue
+        | `-CXXMemberCallExpr 0x7f9e858cae00 <col:5, col:40> 'edsl::StmtBlock'
+        |   |-MemberExpr 0x7f9e858c9db8 <col:5, col:12> '<bound member function type>' .For 0x7f9e858c5640
+        |   | `-DeclRefExpr 0x7f9e858c98c8 <col:5> 'const edsl::AffineDialect' lvalue Var 0x7f9e858c0000 'affine' 'const edsl::AffineDialect'
+        |   `-CXXConstructExpr 0x7f9e858cae40 <col:16, col:39> 'RangeIterExpr<1LL>':'edsl::RangeIterExpr<1>' 'void (edsl::RangeIterExpr<1> &&) noexcept' elidable
+        |     `-MaterializeTemporaryExpr 0x7f9e858cae28 <col:16, col:39> 'RangeIterExpr<1LL>':'edsl::RangeIterExpr<1>' xvalue
+        |       `-CXXOperatorCallExpr 0x7f9e858c9d10 <col:16, col:39> 'RangeIterExpr<1LL>':'edsl::RangeIterExpr<1>' '<<'
+        |         |-ImplicitCastExpr 0x7f9e858c9cf8 <col:20> 'RangeIterExpr<1LL> (*)(Index<1LL>, edsl::Range)' <FunctionToPointerDecay>
+        |         | `-DeclRefExpr 0x7f9e858c9cd8 <col:20> 'RangeIterExpr<1LL> (Index<1LL>, edsl::Range)' lvalue Function 0x7f9e858c3570 'operator<<' 'RangeIterExpr<1LL> (Index<1LL>, edsl::Range)'
+        |         |-CXXConstructExpr 0x7f9e858c9c40 <col:16> 'Index<1LL>':'edsl::Index<1>' 'void (const edsl::Index<1> &) noexcept'
+        |         | `-DeclRefExpr 0x7f9e858c9948 <col:16> 'const Index<1>':'const edsl::Index<1>' lvalue Var 0x7f9e8588c6a8 '_i1' 'const Index<1>':'const edsl::Index<1>'
+        |         `-CXXConstructExpr 0x7f9e858c9ca8 <col:23, col:39> 'edsl::Range' 'void (edsl::Range &&) noexcept'
+        |           `-ImplicitCastExpr 0x7f9e858c9c88 <col:23, col:39> 'edsl::Range' xvalue <DerivedToBase (Range)>
+        |             `-MaterializeTemporaryExpr 0x7f9e858c9c70 <col:23, col:39> 'range<0, 10, 1>':'edsl::range<0, 10, 1>' xvalue
+        |               `-CXXTemporaryObjectExpr 0x7f9e858c9ba8 <col:23, col:39> 'range<0, 10, 1>':'edsl::range<0, 10, 1>' 'void () noexcept' list zeroing
+        `-CXXConstructExpr 0x7f9e858dd210 <line:13:9, line:16:9> 'edsl::StmtBlock':'edsl::StmtBlock' 'void (edsl::StmtBlock &&) noexcept' elidable
+          `-MaterializeTemporaryExpr 0x7f9e858dd1f8 <line:13:9, line:16:9> 'edsl::StmtBlock' xvalue
+            `-CXXOperatorCallExpr 0x7f9e858dcee8 <line:13:9, line:16:9> 'edsl::StmtBlock' '[]'
+              |-ImplicitCastExpr 0x7f9e858dced0 <line:13:46, line:16:9> 'edsl::StmtBlock (*)(edsl::Scalar)' <FunctionToPointerDecay>
+              | `-DeclRefExpr 0x7f9e858dceb0 <line:13:46, line:16:9> 'edsl::StmtBlock (edsl::Scalar)' lvalue CXXMethod 0x7f9e858c8e60 'operator[]' 'edsl::StmtBlock (edsl::Scalar)'
+              |-MaterializeTemporaryExpr 0x7f9e858dce50 <line:13:9, col:44> 'edsl::StmtBlock' lvalue
+              | `-CXXMemberCallExpr 0x7f9e858cdbd8 <col:9, col:44> 'edsl::StmtBlock'
+              |   |-MemberExpr 0x7f9e858cdb90 <col:9, col:16> '<bound member function type>' .For 0x7f9e858cda90
+              |   | `-DeclRefExpr 0x7f9e858cae70 <col:9> 'const edsl::AffineDialect' lvalue Var 0x7f9e858c0000 'affine' 'const edsl::AffineDialect'
+              |   `-CXXConstructExpr 0x7f9e858ce128 <col:20, col:43> 'RangeIterExpr<2LL>':'edsl::RangeIterExpr<2>' 'void (edsl::RangeIterExpr<2> &&) noexcept' elidable
+              |     `-MaterializeTemporaryExpr 0x7f9e858ce0c0 <col:20, col:43> 'RangeIterExpr<2LL>':'edsl::RangeIterExpr<2>' xvalue
+              |       `-CXXOperatorCallExpr 0x7f9e858cd608 <col:20, col:43> 'RangeIterExpr<2LL>':'edsl::RangeIterExpr<2>' '<<'
+              |         |-ImplicitCastExpr 0x7f9e858cd5f0 <col:24> 'RangeIterExpr<2LL> (*)(Index<2LL>, edsl::Range)' <FunctionToPointerDecay>
+              |         | `-DeclRefExpr 0x7f9e858cd570 <col:24> 'RangeIterExpr<2LL> (Index<2LL>, edsl::Range)' lvalue Function 0x7f9e858cd1e0 'operator<<' 'RangeIterExpr<2LL> (Index<2LL>, edsl::Range)'
+              |         |-CXXConstructExpr 0x7f9e858cd3e8 <col:20> 'Index<2LL>':'edsl::Index<2>' 'void (const edsl::Index<2> &) noexcept'
+              |         | `-DeclRefExpr 0x7f9e858caef0 <col:20> 'const Index<2>':'const edsl::Index<2>' lvalue Var 0x7f9e858bac98 '_i2' 'const Index<2>':'const edsl::Index<2>'
+              |         `-CXXConstructExpr 0x7f9e858cd540 <col:27, col:43> 'edsl::Range' 'void (edsl::Range &&) noexcept'
+              |           `-ImplicitCastExpr 0x7f9e858cd520 <col:27, col:43> 'edsl::Range' xvalue <DerivedToBase (Range)>
+              |             `-MaterializeTemporaryExpr 0x7f9e858cd508 <col:27, col:43> 'range<0, 20, 2>':'edsl::range<0, 20, 2>' xvalue
+              |               `-CXXTemporaryObjectExpr 0x7f9e858cbba0 <col:27, col:43> 'range<0, 20, 2>':'edsl::range<0, 20, 2>' 'void () noexcept' list zeroing
+              `-CXXConstructExpr 0x7f9e858dce80 <line:14:13, line:15:29> 'edsl::Scalar':'edsl::Scalar' 'void (const edsl::Scalar &) noexcept'
+                `-ImplicitCastExpr 0x7f9e858dce68 <line:14:13, line:15:29> 'const edsl::Scalar' lvalue <NoOp>
+                  `-BinaryOperator 0x7f9e858cedc8 <line:14:13, line:15:29> 'edsl::Scalar' lvalue ','
+                    |-CXXOperatorCallExpr 0x7f9e858ce528 <line:14:13, col:33> 'edsl::Scalar' lvalue '='
+                    | |-ImplicitCastExpr 0x7f9e858ce510 <col:21> 'edsl::Scalar &(*)(const edsl::Scalar &) noexcept' <FunctionToPointerDecay>
+                    | | `-DeclRefExpr 0x7f9e858ce4f0 <col:21> 'edsl::Scalar &(const edsl::Scalar &) noexcept' lvalue CXXMethod 0x7f9e858c7ae0 'operator=' 'edsl::Scalar &(const edsl::Scalar &) noexcept'
+                    | |-CXXOperatorCallExpr 0x7f9e858ce268 <col:13, col:19> 'edsl::Scalar' lvalue '[]'
+                    | | |-ImplicitCastExpr 0x7f9e858ce250 <col:15, col:19> 'edsl::Scalar &(*)(Index<1LL>)' <FunctionToPointerDecay>
+                    | | | `-DeclRefExpr 0x7f9e858ce230 <col:15, col:19> 'edsl::Scalar &(Index<1LL>)' lvalue CXXMethod 0x7f9e858c7400 'operator[]' 'edsl::Scalar &(Index<1LL>)'
+                    | | |-DeclRefExpr 0x7f9e858ce158 <col:13> 'edsl::Tensor' lvalue ParmVar 0x7f9e858c9780 't2' 'edsl::Tensor'
+                    | | `-CXXConstructExpr 0x7f9e858ce200 <col:16> 'Index<1LL>':'edsl::Index<1>' 'void (const edsl::Index<1> &) noexcept'
+                    | |   `-DeclRefExpr 0x7f9e858ce178 <col:16> 'const Index<1>':'const edsl::Index<1>' lvalue Var 0x7f9e8588c6a8 '_i1' 'const Index<1>':'const edsl::Index<1>'
+                    | `-ImplicitCastExpr 0x7f9e858ce4d8 <col:23, col:33> 'const edsl::Scalar' lvalue <NoOp>
+                    |   `-CXXOperatorCallExpr 0x7f9e858ce498 <col:23, col:33> 'edsl::Scalar' lvalue '*'
+                    |     |-ImplicitCastExpr 0x7f9e858ce480 <col:31> 'edsl::Scalar &(*)(int &&)' <FunctionToPointerDecay>
+                    |     | `-DeclRefExpr 0x7f9e858ce430 <col:31> 'edsl::Scalar &(int &&)' lvalue CXXMethod 0x7f9e858bc0a0 'operator*' 'edsl::Scalar &(int &&)'
+                    |     |-CXXOperatorCallExpr 0x7f9e858ce3b8 <col:23, col:29> 'edsl::Scalar' lvalue '[]'
+                    |     | |-ImplicitCastExpr 0x7f9e858ce3a0 <col:25, col:29> 'edsl::Scalar &(*)(Index<1LL>)' <FunctionToPointerDecay>
+                    |     | | `-DeclRefExpr 0x7f9e858ce380 <col:25, col:29> 'edsl::Scalar &(Index<1LL>)' lvalue CXXMethod 0x7f9e858c7400 'operator[]' 'edsl::Scalar &(Index<1LL>)'
+                    |     | |-DeclRefExpr 0x7f9e858ce2a8 <col:23> 'edsl::Tensor' lvalue ParmVar 0x7f9e858c9708 't1' 'edsl::Tensor'
+                    |     | `-CXXConstructExpr 0x7f9e858ce350 <col:26> 'Index<1LL>':'edsl::Index<1>' 'void (const edsl::Index<1> &) noexcept'
+                    |     |   `-DeclRefExpr 0x7f9e858ce2c8 <col:26> 'const Index<1>':'const edsl::Index<1>' lvalue Var 0x7f9e8588c6a8 '_i1' 'const Index<1>':'const edsl::Index<1>'
+                    |     `-MaterializeTemporaryExpr 0x7f9e858ce418 <col:33> 'int' xvalue
+                    |       `-IntegerLiteral 0x7f9e858ce3f8 <col:33> 'int' 2
+                    `-CXXOperatorCallExpr 0x7f9e858ced88 <line:15:13, col:29> 'edsl::Scalar' lvalue '='
+                      |-ImplicitCastExpr 0x7f9e858ced70 <col:21> 'edsl::Scalar &(*)(const edsl::Scalar &) noexcept' <FunctionToPointerDecay>
+                      | `-DeclRefExpr 0x7f9e858ced50 <col:21> 'edsl::Scalar &(const edsl::Scalar &) noexcept' lvalue CXXMethod 0x7f9e858c7ae0 'operator=' 'edsl::Scalar &(const edsl::Scalar &) noexcept'
+                      |-CXXOperatorCallExpr 0x7f9e858ceba8 <col:13, col:19> 'edsl::Scalar' lvalue '[]'
+                      | |-ImplicitCastExpr 0x7f9e858ceb90 <col:15, col:19> 'edsl::Scalar &(*)(Index<3LL>)' <FunctionToPointerDecay>
+                      | | `-DeclRefExpr 0x7f9e858ceb08 <col:15, col:19> 'edsl::Scalar &(Index<3LL>)' lvalue CXXMethod 0x7f9e858ce7f0 'operator[]' 'edsl::Scalar &(Index<3LL>)'
+                      | |-DeclRefExpr 0x7f9e858ce568 <col:13> 'edsl::Tensor' lvalue ParmVar 0x7f9e858c9780 't2' 'edsl::Tensor'
+                      | `-CXXConstructExpr 0x7f9e858ce9e8 <col:16> 'Index<3LL>':'edsl::Index<3>' 'void (const edsl::Index<3> &) noexcept'
+                      |   `-DeclRefExpr 0x7f9e858ce588 <col:16> 'const Index<3>':'const edsl::Index<3>' lvalue Var 0x7f9e858bb5e8 '_i3' 'const Index<3>':'const edsl::Index<3>'
+                      `-ImplicitCastExpr 0x7f9e858ced38 <col:23, col:29> 'const edsl::Scalar' lvalue <NoOp>
+                        `-CXXOperatorCallExpr 0x7f9e858cecf8 <col:23, col:29> 'edsl::Scalar' lvalue '[]'
+                          |-ImplicitCastExpr 0x7f9e858cece0 <col:25, col:29> 'edsl::Scalar &(*)(Index<1LL>)' <FunctionToPointerDecay>
+                          | `-DeclRefExpr 0x7f9e858cecc0 <col:25, col:29> 'edsl::Scalar &(Index<1LL>)' lvalue CXXMethod 0x7f9e858c7400 'operator[]' 'edsl::Scalar &(Index<1LL>)'
+                          |-DeclRefExpr 0x7f9e858cebe8 <col:23> 'edsl::Tensor' lvalue ParmVar 0x7f9e858c9708 't1' 'edsl::Tensor'
+                          `-CXXConstructExpr 0x7f9e858cec90 <col:26> 'Index<1LL>':'edsl::Index<1>' 'void (const edsl::Index<1> &) noexcept'
+                            `-DeclRefExpr 0x7f9e858cec08 <col:26> 'const Index<1>':'const edsl::Index<1>' lvalue Var 0x7f9e8588c6a8 '_i1' 'const Index<1>':'const edsl::Index<1>'

@@ -1,0 +1,54 @@
+TranslationUnitDecl 0x7fa500013208 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x7fa500013b08 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x7fa5000137a0 '__int128'
+|-TypedefDecl 0x7fa500013b78 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x7fa5000137c0 'unsigned __int128'
+|-TypedefDecl 0x7fa500013f00 <<invalid sloc>> <invalid sloc> implicit __NSConstantString '__NSConstantString_tag'
+| `-RecordType 0x7fa500013c60 '__NSConstantString_tag'
+|   `-CXXRecord 0x7fa500013bd0 '__NSConstantString_tag'
+|-TypedefDecl 0x7fa500013fa8 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x7fa500013f60 'char *'
+|   `-BuiltinType 0x7fa5000132a0 'char'
+|-TypedefDecl 0x7fa50004f550 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list '__va_list_tag [1]'
+| `-ConstantArrayType 0x7fa50004f4f0 '__va_list_tag [1]' 1 
+|   `-RecordType 0x7fa500014090 '__va_list_tag'
+|     `-CXXRecord 0x7fa500014000 '__va_list_tag'
+|-ClassTemplateDecl 0x7fa50004f6d0 <test.cpp:1:1, line:4:1> line:2:8 Range1D
+| |-NonTypeTemplateParmDecl 0x7fa50004f5c0 <line:1:11, col:15> col:15 referenced 'int' depth 0 index 0 d0
+| |-CXXRecordDecl 0x7fa50004f640 <line:2:1, line:4:1> line:2:8 struct Range1D definition
+| | |-DefinitionData empty aggregate standard_layout trivially_copyable pod trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+| | | |-DefaultConstructor exists trivial constexpr needs_implicit defaulted_is_constexpr
+| | | |-CopyConstructor simple trivial has_const_param needs_implicit implicit_has_const_param
+| | | |-MoveConstructor exists simple trivial needs_implicit
+| | | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+| | | |-MoveAssignment exists simple trivial needs_implicit
+| | | `-Destructor simple irrelevant trivial needs_implicit
+| | |-CXXRecordDecl 0x7fa50004f958 <col:1, col:8> col:8 implicit struct Range1D
+| | `-VarDecl 0x7fa50004fa00 <line:3:5, col:32> col:26 dim 'const int' static constexpr cinit
+| |   `-DeclRefExpr 0x7fa50004fa68 <col:32> 'int' NonTypeTemplateParm 0x7fa50004f5c0 'd0' 'int'
+| `-ClassTemplateSpecializationDecl 0x7fa50004fc20 <line:1:1, line:4:1> line:2:8 struct Range1D definition
+|   |-DefinitionData pass_in_registers empty aggregate standard_layout trivially_copyable pod trivial literal has_constexpr_non_copy_move_ctor can_const_default_init
+|   | |-DefaultConstructor exists trivial constexpr needs_implicit defaulted_is_constexpr
+|   | |-CopyConstructor simple trivial has_const_param needs_implicit implicit_has_const_param
+|   | |-MoveConstructor exists simple trivial needs_implicit
+|   | |-CopyAssignment simple trivial has_const_param needs_implicit implicit_has_const_param
+|   | |-MoveAssignment exists simple trivial needs_implicit
+|   | `-Destructor simple irrelevant trivial needs_implicit
+|   |-TemplateArgument integral 10
+|   |-CXXRecordDecl 0x7fa50004fe20 prev 0x7fa50004fc20 <col:1, col:8> col:8 implicit struct Range1D
+|   `-VarDecl 0x7fa50004feb0 <line:3:5, col:32> col:26 referenced dim 'const int' static constexpr cinit
+|     |-value: Int 10
+|     `-SubstNonTypeTemplateParmExpr 0x7fa50004ff48 <col:32> 'int'
+|       |-NonTypeTemplateParmDecl 0x7fa50004f5c0 <line:1:11, col:15> col:15 referenced 'int' depth 0 index 0 d0
+|       `-IntegerLiteral 0x7fa50004ff28 <line:3:32> 'int' 10
+|-FunctionDecl 0x7fa50004faf8 <line:6:1, line:8:1> line:6:15 used constexpr TestRange1D 'int ()'
+| `-CompoundStmt 0x7fa500050090 <col:29, line:8:1>
+|   `-ReturnStmt 0x7fa500050080 <line:7:5, col:25>
+|     `-ImplicitCastExpr 0x7fa500050068 <col:12, col:25> 'int' <LValueToRValue>
+|       `-DeclRefExpr 0x7fa500050038 <col:12, col:25> 'const int' lvalue Var 0x7fa50004feb0 'dim' 'const int' non_odr_use_constant
+`-FunctionDecl 0x7fa5000500d0 <line:10:1, line:12:1> line:10:5 Test 'int ()'
+  `-CompoundStmt 0x7fa500050258 <col:12, line:12:1>
+    `-ReturnStmt 0x7fa500050248 <line:11:5, col:24>
+      `-CallExpr 0x7fa500050228 <col:12, col:24> 'int'
+        `-ImplicitCastExpr 0x7fa500050210 <col:12> 'int (*)()' <FunctionToPointerDecay>
+          `-DeclRefExpr 0x7fa5000501b8 <col:12> 'int ()' lvalue Function 0x7fa50004faf8 'TestRange1D' 'int ()'
