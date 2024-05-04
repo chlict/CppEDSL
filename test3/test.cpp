@@ -9,8 +9,12 @@ void Test1() {
     auto v2 = _v{ _v{1, 2, 3}, _v{4, 5, 6} };
 }
 
-void Test2() {
-    let(var_a = _v{1, 2, 3});
+void Test2(int i) {
+    let(var_a = _v{1, 2, 3, i});
     let(var_b = {1, 2, 3});
     let(var_c = {_v{1, 2, 3}, _v{4, 5, 6}});
+}
+
+void Test3() {
+    let(var_a = _v{1, 2, 3});
 }

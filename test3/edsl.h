@@ -16,6 +16,10 @@ namespace edsl {
     struct VarDeclExpr : Expr {};
     struct VarInitExpr {};
 
+    template <int ... Literals>
+    struct _vint {
+    };
+
     // Value & ValueListExpr
     struct _v {
         _v() = delete;
